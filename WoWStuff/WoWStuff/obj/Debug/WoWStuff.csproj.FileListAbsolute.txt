@@ -1,0 +1,12 @@
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\bin\Debug\WoWStuff.exe.config
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\bin\Debug\WoWStuff.exe
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\bin\Debug\WoWStuff.pdb
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\MainWindow.baml
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\MainWindow.g.cs
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\App.g.cs
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\WoWStuff_MarkupCompile.cache
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\WoWStuff.g.resources
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\WoWStuff.Properties.Resources.resources
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\WoWStuff.csproj.GenerateResource.Cache
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\WoWStuff.exe
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\WoWStuff\obj\Debug\WoWStuff.pdb

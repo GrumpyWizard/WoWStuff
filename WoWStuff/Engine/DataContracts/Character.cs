@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Runtime.Serialization;
+
+namespace Engine.DataContracts
+{
+  [DataContract]
+  class Character
+  {
+    /// <summary>
+    /// Source: http://blizzard.github.io/api-wow-docs/#character-profile-api
+    /// </summary>
+
+    [DataMember(Name = "achievementPoints")]
+    public int AchievementPoints { get; set; }
+
+    [DataMember(Name = "battleGroup")]
+    public string BattleGroup { get; set; }
+
+    [DataMember(Name = "calcClass")]
+    public char CalcClass { get; set; }
+    
+    [DataMember(Name = "class")]
+    public CharacterClass @Class { get; set; }
+
+    [DataMember(Name = "gender")]
+    public CharacterGender Gender { get; set; }
+
+    [DataMember(Name = "lastModified")]
+    public string LastModified { get; set; }
+
+    [DataMember(Name = "level")]
+    public int Level { get; set; }
+
+    [DataMember(Name = "name")]
+    public string Name { get; set; }
+
+    [DataMember(Name = "race")]
+    public CharacterRace Race { get; set; }
+
+    [DataMember(Name = "realm")]
+    public string Realm { get; set; }
+
+    [DataMember(Name = "thumbnail")]
+    public string ThumbNail { get; set; }
+
+    public override bool Equals(object obj)
+    {
+      return base.Equals(obj);
+    }
+
+    public override int GetHashCode()
+    {
+      return base.GetHashCode();
+    }
+
+    public static bool operator ==(Character c1, Character c2)
+    {
+      if (c1.AchievementPoints == c2.AchievementPoints &&
+          c1.BattleGroup == c2.BattleGroup &&
+          c1.CalcClass == c2.CalcClass &&
+          c1.@Class == c2.@Class &&
+          c1.Gender == c2.Gender &&
+          c1.LastModified == c2.LastModified &&
+          c1.Level == c2.Level &&
+          c1.Name == c2.Name &&
+          c1.Race == c2.Race &&
+          c1.Realm == c2.Realm &&
+          c1.ThumbNail == c2.ThumbNail )
+      {
+        return true;
+      }
+      return false;
+    }
+
+    public static bool operator !=(Character c1, Character c2)
+    {
+      return !(c1 == c2);
+    }
+
+    // The remaining data members are optional. They are requested through the 'fields' query string parameter.
+    // Example: http://us.battle.net/api/wow/character/Medivh/Uther?fields=guild,items,professions,reputation,stats
+
+    //achievements
+    //appearance
+    //feed
+    //guild
+    //hunterPets
+    //items
+    //mounts
+    //pets
+    //petSlots
+    //professions
+    //progression
+    //pvp
+    //quests
+    //reputation
+    //stats
+    //talents
+    //titles
+    //audit
+  }
+}
