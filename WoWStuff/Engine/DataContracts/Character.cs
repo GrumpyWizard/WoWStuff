@@ -84,6 +84,8 @@ namespace Engine.DataContracts
     // The remaining data members are optional. They are requested through the 'fields' query string parameter.
     // Example: http://us.battle.net/api/wow/character/Medivh/Uther?fields=guild,items,professions,reputation,stats
 
+    [DataMember(Name = "achievements")]
+    //return CharacterAchievements CharacterAchievements { get; set; }
     //achievements
     //appearance
     //feed
