@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataContracts\Achievements.cs" />
     <Compile Include="DataContracts\Character.cs" />
     <Compile Include="DataContracts\CharacterClass.cs" />
     <Compile Include="DataContracts\CharacterGender.cs" />
