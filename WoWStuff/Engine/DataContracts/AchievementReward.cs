@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 
 namespace Engine.DataContracts
 {
-  class AchievementReward
+  public class AchievementReward
   {
     [DataMember(Name = "id")]
     public int Id { get; set; }

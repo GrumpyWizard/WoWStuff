@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 namespace Engine.DataContracts
 {
   [DataContract]
-  class CharacterAppearance
+  public class CharacterAppearance
   {
     [DataMember(Name = "faceVariation")]
     public int FaceVariation { get; set; }

@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 namespace Engine.DataContracts
 {
   [DataContract]
-  class AchievementInfo
+  public class AchievementInfo
   {
     [DataMember(Name = "accountWide")]
     public bool AccountWide { get; set; }

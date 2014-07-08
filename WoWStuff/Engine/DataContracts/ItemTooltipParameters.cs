@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 
 namespace Engine.DataContracts
 {
-  class ItemTooltipParameters
+  public class ItemTooltipParameters
   {
     [DataMember(Name = "gem0")]
     public int Gem0 { get; set; }

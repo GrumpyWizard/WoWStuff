@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 namespace Engine.DataContracts
 {
   [DataContract]
-  class Character
+  public class Character
   {
     /// <summary>
     /// Source: http://blizzard.github.io/api-wow-docs/#character-profile-api
@@ -85,7 +85,7 @@ namespace Engine.DataContracts
     // Example: http://us.battle.net/api/wow/character/Medivh/Uther?fields=guild,items,professions,reputation,stats
 
     [DataMember(Name = "achievements")]
-    //return CharacterAchievements CharacterAchievements { get; set; }
+    public Achievements CharacterAchievements { get; set; }
     //achievements
     //appearance
     //feed

@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 namespace Engine.DataContracts
 {
   [DataContract]
-  class AchievementCriteria
+  public class AchievementCriteria
   {
     [DataMember(Name = "description")]
     public string Description { get; set; }

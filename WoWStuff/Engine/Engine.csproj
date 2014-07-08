@@ -40,11 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataContracts\AchievementCriteria.cs" />
+    <Compile Include="DataContracts\AchievementInfo.cs" />
+    <Compile Include="DataContracts\AchievementReward.cs" />
     <Compile Include="DataContracts\Achievements.cs" />
     <Compile Include="DataContracts\Character.cs" />
+    <Compile Include="DataContracts\CharacterAppearance.cs" />
     <Compile Include="DataContracts\CharacterClass.cs" />
+    <Compile Include="DataContracts\CharacterFeed.cs" />
     <Compile Include="DataContracts\CharacterGender.cs" />
+    <Compile Include="DataContracts\CharacterHunterPets.cs" />
     <Compile Include="DataContracts\CharacterRace.cs" />
+    <Compile Include="DataContracts\CharacterTalentSpec.cs" />
+    <Compile Include="DataContracts\Guild.cs" />
+    <Compile Include="DataContracts\GuildCharacter.cs" />
+    <Compile Include="DataContracts\GuildEmblem.cs" />
+    <Compile Include="DataContracts\GuildMember.cs" />
+    <Compile Include="DataContracts\GuildNews.cs" />
+    <Compile Include="DataContracts\ItemTooltipParameters.cs" />
     <Compile Include="JSON\JSONHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
