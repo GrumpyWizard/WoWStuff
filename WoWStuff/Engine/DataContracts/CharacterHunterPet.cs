@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 namespace Engine.DataContracts
 {
   [DataContract]
-  public class CharacterHunterPets
+  public class CharacterHunterPet
   {
     [DataMember(Name = "calcSpec")]
     public string CalcSpec { get; set; }

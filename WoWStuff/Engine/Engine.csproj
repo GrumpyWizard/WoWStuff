@@ -47,9 +47,15 @@
     <Compile Include="DataContracts\Character.cs" />
     <Compile Include="DataContracts\CharacterAppearance.cs" />
     <Compile Include="DataContracts\CharacterClass.cs" />
+    <Compile Include="DataContracts\CharacterEquipment.cs" />
     <Compile Include="DataContracts\CharacterFeed.cs" />
     <Compile Include="DataContracts\CharacterGender.cs" />
-    <Compile Include="DataContracts\CharacterHunterPets.cs" />
+    <Compile Include="DataContracts\CharacterGuild.cs" />
+    <Compile Include="DataContracts\CharacterGuildEmblem.cs" />
+    <Compile Include="DataContracts\CharacterHunterPet.cs" />
+    <Compile Include="DataContracts\CharacterItem.cs" />
+    <Compile Include="DataContracts\CharacterMount.cs" />
+    <Compile Include="DataContracts\CharacterMounts.cs" />
     <Compile Include="DataContracts\CharacterRace.cs" />
     <Compile Include="DataContracts\CharacterTalentSpec.cs" />
     <Compile Include="DataContracts\Guild.cs" />

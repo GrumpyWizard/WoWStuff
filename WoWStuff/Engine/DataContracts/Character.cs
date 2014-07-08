@@ -86,13 +86,26 @@ namespace Engine.DataContracts
 
     [DataMember(Name = "achievements")]
     public Achievements CharacterAchievements { get; set; }
-    //achievements
-    //appearance
-    //feed
-    //guild
-    //hunterPets
-    //items
-    //mounts
+
+    [DataMember(Name = "appearance")]
+    public CharacterAppearance CharacterAppearance { get; set; }
+
+    [DataMember(Name = "feed")]
+    public IEnumerable<CharacterFeed> Feed { get; set; }
+
+    [DataMember(Name = "guild")]
+    public CharacterGuild Guild { get; set; }
+
+    [DataMember(Name = "hunterPets")]
+    public IEnumerable<CharacterHunterPet> HunterPets { get; set; }
+
+    [DataMember(Name = "items")]
+    public CharacterEquipment Items { get; set; }
+
+    [DataMember(Name = "mounts")]
+    public CharacterMounts Mounts { get; set; }
+
+
     //pets
     //petSlots
     //professions
