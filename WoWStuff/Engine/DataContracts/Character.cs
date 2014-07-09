@@ -47,40 +47,6 @@ namespace Engine.DataContracts
     [DataMember(Name = "thumbnail")]
     public string ThumbNail { get; set; }
 
-    public override bool Equals(object obj)
-    {
-      return base.Equals(obj);
-    }
-
-    public override int GetHashCode()
-    {
-      return base.GetHashCode();
-    }
-
-    public static bool operator ==(Character c1, Character c2)
-    {
-      if (c1.AchievementPoints == c2.AchievementPoints &&
-          c1.BattleGroup == c2.BattleGroup &&
-          c1.CalcClass == c2.CalcClass &&
-          c1.@Class == c2.@Class &&
-          c1.Gender == c2.Gender &&
-          c1.LastModified == c2.LastModified &&
-          c1.Level == c2.Level &&
-          c1.Name == c2.Name &&
-          c1.Race == c2.Race &&
-          c1.Realm == c2.Realm &&
-          c1.ThumbNail == c2.ThumbNail )
-      {
-        return true;
-      }
-      return false;
-    }
-
-    public static bool operator !=(Character c1, Character c2)
-    {
-      return !(c1 == c2);
-    }
-
     // The remaining data members are optional. They are requested through the 'fields' query string parameter.
     // Example: http://us.battle.net/api/wow/character/Medivh/Uther?fields=guild,items,professions,reputation,stats
 
@@ -105,17 +71,72 @@ namespace Engine.DataContracts
     [DataMember(Name = "mounts")]
     public CharacterMounts Mounts { get; set; }
 
+    [DataMember(Name = "pets")]
+    public CharacterPets Pets { get; set; }
 
-    //pets
-    //petSlots
-    //professions
-    //progression
-    //pvp
-    //quests
-    //reputation
-    //stats
-    //talents
-    //titles
-    //audit
+    [DataMember(Name = "petSlots")]
+    public IEnumerable<CharacterPetSlot> PetSlots { get; set; }
+
+    [DataMember(Name = "professions")]
+    public CharacterProfessions Professions { get; set; }
+
+    [DataMember(Name = "progression")]
+    public Progression Progression { get; set; }
+
+    [DataMember(Name = "pvp")]
+    public CharacterPvP PvP { get; set; }
+
+    [DataMember(Name = "quests")]
+    public IEnumerable<int> Quests { get; set; }
+
+    [DataMember(Name = "reputation")]
+    public IEnumerable<CharacterReputation> Reputation { get; set; }
+
+    [DataMember(Name = "stats")]
+    public CharacterStats Stats { get; set; }
+
+    [DataMember(Name = "talents")]
+    public IEnumerable<CharacterTalent> Talents { get; set; }
+
+    [DataMember(Name = "titles")]
+    public IEnumerable<CharacterTitle> Titles { get; set; }
+
+    public CharacterClass Class_x { get { return (CharacterClass)Enum.Parse(typeof(CharacterClass), Enum.GetName(typeof(CharacterClass), @Class).Replace(' ', '_')); } }
+    public CharacterRace Race_x { get { return (CharacterRace)Enum.Parse(typeof(CharacterRace), Enum.GetName(typeof(CharacterRace), Race).Replace(' ', '_')); } }
+    public CharacterGender Gender_x { get { return (CharacterGender)Enum.Parse(typeof(CharacterGender), Enum.GetName(typeof(CharacterGender), Gender).Replace(' ', '_')); } }
+
+    public override bool Equals(object obj)
+    {
+      return base.Equals(obj);
+    }
+
+    public override int GetHashCode()
+    {
+      return base.GetHashCode();
+    }
+
+    public static bool operator ==(Character c1, Character c2)
+    {
+      if (c1.AchievementPoints == c2.AchievementPoints &&
+          c1.BattleGroup == c2.BattleGroup &&
+          c1.CalcClass == c2.CalcClass &&
+          c1.@Class == c2.@Class &&
+          c1.Gender == c2.Gender &&
+          c1.LastModified == c2.LastModified &&
+          c1.Level == c2.Level &&
+          c1.Name == c2.Name &&
+          c1.Race == c2.Race &&
+          c1.Realm == c2.Realm &&
+          c1.ThumbNail == c2.ThumbNail)
+      {
+        return true;
+      }
+      return false;
+    }
+
+    public static bool operator !=(Character c1, Character c2)
+    {
+      return !(c1 == c2);
+    }
   }
 }

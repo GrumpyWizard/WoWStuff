@@ -2,3 +2,4 @@ C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine\bin\Debug\Engine.dll
 C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine\bin\Debug\Engine.pdb
 C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine\obj\Debug\Engine.dll
 C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine\obj\Debug\Engine.pdb
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
