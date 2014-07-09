@@ -24,10 +24,10 @@ namespace Engine.DataContracts
     public char CalcClass { get; set; }
     
     [DataMember(Name = "class")]
-    public CharacterClass @Class { get; set; }
+    public CharacterClass @class { get; set; }
 
     [DataMember(Name = "gender")]
-    public CharacterGender Gender { get; set; }
+    public CharacterGender gender { get; set; }
 
     [DataMember(Name = "lastModified")]
     public string LastModified { get; set; }
@@ -39,7 +39,7 @@ namespace Engine.DataContracts
     public string Name { get; set; }
 
     [DataMember(Name = "race")]
-    public CharacterRace Race { get; set; }
+    public CharacterRace race { get; set; }
 
     [DataMember(Name = "realm")]
     public string Realm { get; set; }
@@ -101,9 +101,9 @@ namespace Engine.DataContracts
     [DataMember(Name = "titles")]
     public IEnumerable<CharacterTitle> Titles { get; set; }
 
-    public CharacterClass Class_x { get { return (CharacterClass)Enum.Parse(typeof(CharacterClass), Enum.GetName(typeof(CharacterClass), @Class).Replace(' ', '_')); } }
-    public CharacterRace Race_x { get { return (CharacterRace)Enum.Parse(typeof(CharacterRace), Enum.GetName(typeof(CharacterRace), Race).Replace(' ', '_')); } }
-    public CharacterGender Gender_x { get { return (CharacterGender)Enum.Parse(typeof(CharacterGender), Enum.GetName(typeof(CharacterGender), Gender).Replace(' ', '_')); } }
+    public CharacterClass Class { get { return (CharacterClass)Enum.Parse(typeof(CharacterClass), Enum.GetName(typeof(CharacterClass), @class).Replace(' ', '_')); } }
+    public CharacterRace Race { get { return (CharacterRace)Enum.Parse(typeof(CharacterRace), Enum.GetName(typeof(CharacterRace), race).Replace(' ', '_')); } }
+    public CharacterGender Gender { get { return (CharacterGender)Enum.Parse(typeof(CharacterGender), Enum.GetName(typeof(CharacterGender), gender).Replace(' ', '_')); } }
 
     public override bool Equals(object obj)
     {
