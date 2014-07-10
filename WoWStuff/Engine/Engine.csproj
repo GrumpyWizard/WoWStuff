@@ -128,6 +128,7 @@
     <Compile Include="DataContracts\Progression.cs" />
     <Compile Include="DataContracts\Raid.cs" />
     <Compile Include="DataContracts\RaidBoss.cs" />
+    <Compile Include="DataContracts\Realm.cs" />
     <Compile Include="JSON\JSONHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
