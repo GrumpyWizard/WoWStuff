@@ -8,32 +8,6 @@ using System.Runtime.Serialization;
 namespace Engine.DataContracts
 {
   [DataContract]
-  public enum RealmType
-  {
-      [EnumMember(Value = "pve")]
-      PVE,
-      [EnumMember(Value = "pvp")]
-      PVP,
-      [EnumMember(Value = "rp")]
-      RP,
-      [EnumMember(Value = "rppvp")]
-      RPPVP
-  }
-
-  [DataContract]
-  public enum RealmPopulation
-  {
-      [EnumMember(Value = "low")]
-      LOW,
-      [EnumMember(Value = "medium")]
-      MEDIUM,
-      [EnumMember(Value = "high")]
-      HIGH,
-      [EnumMember(Value = "n/a")]
-      NA
-  }
-
-  [DataContract]
   public class Realm
   {
     [DataMember(Name = "type")]

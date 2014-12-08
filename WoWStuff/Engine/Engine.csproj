@@ -129,7 +129,17 @@
     <Compile Include="DataContracts\Raid.cs" />
     <Compile Include="DataContracts\RaidBoss.cs" />
     <Compile Include="DataContracts\Realm.cs" />
-    <Compile Include="JSON\JSONHandler.cs" />
+    <Compile Include="DataContracts\RealmPopulation.cs" />
+    <Compile Include="DataContracts\RealmsData.cs" />
+    <Compile Include="DataContracts\RealmType.cs" />
+    <Compile Include="Explorer\IExplorer.cs" />
+    <Compile Include="Explorer\Optionals\CharacterOptions.cs" />
+    <Compile Include="Explorer\Optionals\GuildOptions.cs" />
+    <Compile Include="Explorer\Optionals\LocaleInfo.cs" />
+    <Compile Include="Explorer\Optionals\RegionInfo.cs" />
+    <Compile Include="Explorer\WoWExplorer.cs" />
+    <Compile Include="Utilities\CharacterUtility.cs" />
+    <Compile Include="Utilities\JSON\JSONHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

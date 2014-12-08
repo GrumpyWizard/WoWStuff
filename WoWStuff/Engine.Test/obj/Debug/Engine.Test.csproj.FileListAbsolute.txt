@@ -1,0 +1,7 @@
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\bin\Debug\Engine.Test.dll
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\bin\Debug\Engine.Test.pdb
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\bin\Debug\Engine.dll
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\bin\Debug\Engine.pdb
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\obj\Debug\Engine.Test.csprojResolveAssemblyReference.cache
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\obj\Debug\Engine.Test.dll
+C:\Users\b.lensen\Documents\GitHub\WoWStuff\WoWStuff\Engine.Test\obj\Debug\Engine.Test.pdb

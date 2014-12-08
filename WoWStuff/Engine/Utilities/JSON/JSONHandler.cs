@@ -8,7 +8,7 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Security.Cryptography;
 
-namespace Engine.JSON
+namespace Engine.Utilities.JSON
 {
   public static class JSONHandler
   {
