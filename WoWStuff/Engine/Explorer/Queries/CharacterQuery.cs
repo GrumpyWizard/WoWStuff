@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Engine.Explorer.Optionals;
 
-namespace Engine.Utilities
+
+namespace Engine.Explorer.Queries
 {
-  class CharacterUtility
+  public static class CharacterQuery
   {
     public static string buildOptionalQuery(CharacterOptions characterOptions)
     {
@@ -65,8 +66,6 @@ namespace Engine.Utilities
       if ((characterOptions & CharacterOptions.GetHunterPets) == CharacterOptions.GetHunterPets)
         tmp.Add("hunterPets");
 
-      //petSlots
-      //Pets
 
       if (tmp.Count == 0) return string.Empty;
 

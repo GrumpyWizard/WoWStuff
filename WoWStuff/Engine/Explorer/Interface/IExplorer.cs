@@ -9,7 +9,7 @@ using Engine.Utilities;
 using Engine.Utilities.JSON;
 using Engine.Explorer.Optionals;
 
-namespace Engine.Explorer
+namespace Engine.Explorer.Interface
 {
   public interface IExplorer
   {

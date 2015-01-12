@@ -12,7 +12,7 @@ namespace Engine.Explorer.Optionals
     EU,   //eu.api.battle.net
     KR,   //kr.api.battle.net
     TW,   //tw.api.battle.net
-    CN,   //
+    CN,   //www.battlenet.com.cn
     SEA   //sea.api.battle.net
   }
 }

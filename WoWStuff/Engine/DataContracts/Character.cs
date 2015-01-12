@@ -24,7 +24,7 @@ namespace Engine.DataContracts
     public char CalcClass { get; set; }
     
     [DataMember(Name = "class")]
-    public CharacterClass @class { get; set; }
+    public CharacterClass yourClass { get; set; }
 
     [DataMember(Name = "gender")]
     public CharacterGender gender { get; set; }
@@ -101,7 +101,7 @@ namespace Engine.DataContracts
     [DataMember(Name = "titles")]
     public IEnumerable<CharacterTitle> Titles { get; set; }
 
-    public CharacterClass Class { get { return (CharacterClass)Enum.Parse(typeof(CharacterClass), Enum.GetName(typeof(CharacterClass), @class).Replace(' ', '_')); } }
+    public CharacterClass Class { get { return (CharacterClass)Enum.Parse(typeof(CharacterClass), Enum.GetName(typeof(CharacterClass), yourClass).Replace(' ', '_')); } }
     public CharacterRace Race { get { return (CharacterRace)Enum.Parse(typeof(CharacterRace), Enum.GetName(typeof(CharacterRace), race).Replace(' ', '_')); } }
     public CharacterGender Gender { get { return (CharacterGender)Enum.Parse(typeof(CharacterGender), Enum.GetName(typeof(CharacterGender), gender).Replace(' ', '_')); } }
 

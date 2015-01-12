@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization.Json;
 using Engine.DataContracts;
-using Engine.Utilities;
 using Engine.Utilities.JSON;
+using Engine.Explorer.Interface;
 using Engine.Explorer.Optionals;
+using Engine.Explorer.Queries;
+
 
 namespace Engine.Explorer
 {
@@ -76,7 +78,7 @@ namespace Engine.Explorer
       Character character;
 
       TryGetData<Character>(
-          string.Format(@"{0}/wow/character/{1}/{2}?locale={3}{4}&apikey={5}", Host, realm, name, Locale, CharacterUtility.buildOptionalQuery(characterOptions), APIKey),
+          string.Format(@"{0}/wow/character/{1}/{2}?locale={3}{4}&apikey={5}", Host, realm, name, Locale, CharacterQuery.buildOptionalQuery(characterOptions), APIKey),
           out character);
 
       return character;
