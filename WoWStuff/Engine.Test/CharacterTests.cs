@@ -14,7 +14,7 @@ namespace Engine.Test
   public class CharacterTests
   {
     private static WoWExplorer TheWoWExplorer;
-    private static string TheApiKey = "twz3ufwuydydnhha5rkk8rjfjuqzm4c8"; // To get your api key, register at https://dev.battle.net/
+    private static string TheApiKey = ""; // To get your api key, register at https://dev.battle.net/
 
     private static string CharacterName = "Mixup";
     private static string RealmName = "ShadowSong";
